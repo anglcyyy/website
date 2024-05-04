@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Ayati Hayati</title>
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tenor-gif-embed" data-postid="17725371557386627543" data-share-method="host" data-aspect-ratio="0.843373" data-width="100%"><a href="https://tenor.com/view/happy-happy-happy-happy-happy-cat-happy-dancing-cat-gif-17725371557386627543">Happy Happy Happy Happy GIF</a>from <a href="https://tenor.com/search/happy-gifs">Happy GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        <h1>YESSS I WIN AT LIFEEEE</h1>
+        <p>Allehow kwist wel dat je me leuk vindt *knipoog*</p>
+        <div class="btn">
+            <a href="index.html">terug</a>
+        </div>
+</div>
+<script>
+    function tulips() {
+
+        const container = document.querySelector('.container');
+
+        const create = document.createElement('div');
+        create.classList.add('tulips');
+        create.innerHTML = '🌷';
+
+        create.style.left = Math.random() * 100 + 'vw';
+        create.style.animationDuration = Math.random() * 3 + 2 + 's';
+
+        container.appendChild(create);
+        setTimeout(() => {
+            create.remove();
+        }, 3000);
+
+    }
+
+    setInterval(tulips, 100);
+</script>
+</body>
+</html>

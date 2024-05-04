@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efcdcd;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 0.5em;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.container .tenor-gif-embed {
+    max-width: 200px;
+}
+
+.container .btn {
+    display: flex;
+    gap: 25px;
+}
+
+.container .btn .btn2 a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(92, 0, 0);
+    padding: 10px 25px;
+    border-radius: 5px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+}
+.btn a {
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    font-family: '';
+    font-family: "Oswald", sans-serif;
+}
+p {
+    font-size: 2rem;
+}
+
+.tulips {
+    font-size: 23px;
+    font-weight: bold;
+    position: fixed;
+    top: -1vh;
+    transform: translateY(0%);
+    left: 0;
+    animation: fall 1s ease-in infinite;
+}
+@keyframes fall {
+    to{
+        transform: translateY(250vw);
+    }
+}
